@@ -1,0 +1,19 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border: 1px dashed black;
+  padding: 5px;
+  width: 600px;
+}
+
+.listItem button {
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 30px;
+  background-color: red;
+  color: aliceblue;
+}
+

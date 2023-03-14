@@ -1,0 +1,13 @@
+.block {
+  display: block;
+}
+
+.block label {
+  font-size: 32px;
+}
+
+.block input {
+  border: 1px solid black;
+  font-size: 28px;
+  margin-bottom: 18px;
+}

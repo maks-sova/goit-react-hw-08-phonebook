@@ -1,0 +1,10 @@
+.contactList {
+  font-size: 30px;
+  width: 400px;
+  padding-left: 80px;
+}
+
+.warning {
+  color: red;
+  font-size: 30px;
+}
