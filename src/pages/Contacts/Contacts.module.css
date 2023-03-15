@@ -1,0 +1,15 @@
+.text {
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.contacts {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

@@ -1,28 +1,16 @@
-import { addContacts } from '../../redux/contactsOperations';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from '../../redux/selectors';
+import { addContacts } from '../../redux/contacts/contactsOperations';
+import { useDispatch } from 'react-redux';
 import css from './ContactForm.module.css';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
-  const stateContacts = useSelector(selectContacts);
 
   const handlerSubmit = event => {
     event.preventDefault();
     const contact = {
       name: event.target.elements.name.value,
-      phone: event.target.elements.phone.value,
+      number: event.target.elements.phone.value,
     };
-
-    const isCoincidence = stateContacts.find(
-      item => item.name.toLowerCase() === contact.name.toLowerCase()
-    );
-
-    if (isCoincidence) {
-      alert(`${contact.name} is already in contacts`);
-      event.target.reset();
-      return;
-    }
     dispatch(addContacts(contact));
     event.target.reset();
   };
@@ -45,7 +33,7 @@ const ContactForm = () => {
       </label>
 
       <label className={css.block}>
-        phone
+        Phone Number
         <input
           className={css.block}
           type="tel"

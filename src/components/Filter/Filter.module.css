@@ -1,13 +1,20 @@
-.block {
+.filterLabel {
   display: block;
+  font-size: 15px;
 }
 
-.block label {
-  font-size: 32px;
+.filterInput {
+  margin-top: 10px;
+  display: block;
+  border: 3px solid black;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  outline: none;
 }
 
-.block input {
-  border: 1px solid black;
-  font-size: 28px;
-  margin-bottom: 18px;
+.filterInput:hover,
+.filterInput:focus {
+  border: 3px solid blue;
+  outline: none;
 }

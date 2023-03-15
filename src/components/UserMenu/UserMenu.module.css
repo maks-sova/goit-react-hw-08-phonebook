@@ -1,0 +1,49 @@
+.usermenu {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: 28px;
+  margin-right: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  animation-name: changeName;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  color: red;
+  text-decoration: underline;
+  padding-bottom: 8px;
+}
+
+@keyframes changeName {
+  0% {
+    scale: 0.3;
+  }
+
+  50% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.button {
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 18px;
+  cursor: pointer;
+  background-color: azure;
+  border: 1px solid azure;
+}
+
+.button:hover,
+.button:focus {
+  background-color: blue;
+  border: 1px solid blue;
+}

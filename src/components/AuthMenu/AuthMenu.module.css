@@ -1,0 +1,18 @@
+.authLinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+.linkRegister {
+  margin-right: 30px;
+}
+
+.link:global(.active) {
+  color:yellow;
+  text-decoration: underline;
+}

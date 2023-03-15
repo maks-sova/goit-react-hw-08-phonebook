@@ -1,0 +1,30 @@
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+}
+
+.linkLayout {
+  display: flex;
+  align-items: center;
+  background-color: brown;
+  font-size: 30px;
+}
+
+.linkLogin {
+  justify-content: space-between;
+}
+
+.linkNotLogin {
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.link:global(.active) {
+  color: blue;
+  text-decoration: underline;
+}
